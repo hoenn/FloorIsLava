@@ -26,6 +26,7 @@
     <room>rooms\rm_0</room>
     <room>rooms\rm_1</room>
     <room>rooms\rm_2</room>
+    <room>rooms\rm_3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
