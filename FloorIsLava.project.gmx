@@ -10,6 +10,7 @@
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_chckpt</sprite>
     <sprite>sprites\spr_sign</sprite>
+    <sprite>sprites\spr_boots</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -21,6 +22,7 @@
     <object>objects\obj_wall</object>
     <object>objects\obj_chckpt</object>
     <object>objects\obj_sign</object>
+    <object>objects\obj_boots</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_0</room>
