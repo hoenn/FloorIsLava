@@ -29,35 +29,13 @@
 grav    = 1;
 terminal= 10;
 hspd    = 0;
+fric    = 3; 
 vspd    = 0;
-spd     = 8;
+spd     = 9;
 jspd    = 12;
 start   = false;
+
 </string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>410</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>-1</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_if_aligned</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>16</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>16</string>
           </argument>
         </arguments>
       </action>
@@ -85,13 +63,19 @@ var rkey= keyboard_check(vk_right);
 var lkey = keyboard_check(vk_left);
 var jkey = keyboard_check(vk_space);
 
+if(x &gt; room_width || x &lt; 0 || y &gt; room_height || y &lt; 0)
+{
+    show_message("Game over");
+    room_restart();
+}
+
 
 if(place_meeting(x, y+1, obj_wall)) 
 {
     if(start==true)
     {
         show_message("Game over");
-        room_goto(rm_0);
+        room_restart();
         
     }
     vspd=0;
@@ -105,12 +89,16 @@ else
 {
     if(vspd &lt; terminal)
         vspd+=grav;
+        
     
 }
 
 if(rkey)
 {
-    hspd = spd;
+    if(hspd &lt; spd)
+        hspd+=fric;
+    else
+        hspd = spd;
     
     if(place_meeting(x-1, y, obj_wall) &amp;&amp; !place_meeting(x, y+1, obj_wall) &amp;&amp; !lkey)
     {
@@ -120,7 +108,10 @@ if(rkey)
 
 if(lkey)
 {
-    hspd = -spd;
+    if(hspd &gt; -spd)
+        hspd -= fric;
+    else
+        hspd = -spd;
     
     if(place_meeting(x+1, y, obj_wall) &amp;&amp; !place_meeting(x, y+1, obj_wall) &amp;&amp; !rkey)
     {
@@ -129,7 +120,15 @@ if(lkey)
 }
     
 if((!rkey &amp;&amp; !lkey) || (rkey &amp;&amp; lkey))
-    hspd=0;
+{
+    if(hspd != 0)
+    {
+        if(hspd &lt; 0)
+            hspd += fric;
+        else
+            hspd -= fric;
+    }
+}
 
     
 //Horizontal Collision
@@ -161,6 +160,20 @@ y += vspd;
       </action>
     </event>
     <event eventtype="4" ename="obj_chckpt">
+      <action>
+        <libid>1</libid>
+        <id>226</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_next_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
       <action>
         <libid>1</libid>
         <id>222</id>
