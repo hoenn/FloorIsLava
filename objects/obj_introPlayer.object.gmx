@@ -75,7 +75,11 @@ var rkey= keyboard_check(vk_right);
 var lkey = keyboard_check(vk_left);
 var jkey = keyboard_check(vk_space);
 
-
+//Check if offscreen
+if(x &gt; room_width || x &lt; 0 || y &gt; room_height || y &lt; 0)
+{
+    room_restart();
+}
 //Check ground
 if(place_meeting(x, y+1, obj_wall)) 
 {
