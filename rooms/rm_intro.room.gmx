@@ -116,7 +116,7 @@
     <instance objName="obj_wall" x="672" y="960" name="inst_0C853E98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign" x="64" y="1280" name="inst_57272EC4" locked="0" code="text = &quot;CAUTION&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign" x="128" y="1280" name="inst_747AB094" locked="0" code="text = &quot;ACTIVE VOLCANO&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sign" x="704" y="864" name="inst_FAA90849" locked="0" code="text = &quot;You'll need these&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sign" x="704" y="864" name="inst_FAA90849" locked="0" code="text = &quot;your boots&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_endTut" x="1376" y="1376" name="inst_28FF46EC" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="832" y="896" name="inst_1BD8E710" locked="0" code="" scaleX="5" scaleY="20" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="896" y="896" name="inst_112309A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

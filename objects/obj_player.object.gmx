@@ -180,7 +180,7 @@ if(has_boots)
 }
 else
 {
-    if(place_meeting(x, y, obj_boots))
+    if(vspd==0 &amp;&amp; place_meeting(x, y, obj_boots))
     {
         has_boots = true;
     }
