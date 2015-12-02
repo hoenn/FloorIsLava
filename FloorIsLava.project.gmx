@@ -11,8 +11,11 @@
     <sprite>sprites\spr_chckpt</sprite>
     <sprite>sprites\spr_sign</sprite>
     <sprite>sprites\spr_boots</sprite>
+    <sprite>sprites\spr_endTut</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
@@ -23,15 +26,24 @@
     <object>objects\obj_chckpt</object>
     <object>objects\obj_sign</object>
     <object>objects\obj_boots</object>
+    <object>objects\obj_introPlayer</object>
+    <objects name="intro">
+      <object>objects\obj_endTut</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_0</room>
-    <room>rooms\rm_1</room>
-    <room>rooms\rm_2</room>
-    <room>rooms\rm_3</room>
-    <room>rooms\rm_4</room>
-    <room>rooms\rm_5</room>
-    <room>rooms\rm_6</room>
+    <rooms name="ch_0">
+      <room>rooms\rm_intro</room>
+    </rooms>
+    <rooms name="ch_1">
+      <room>rooms\rm_0</room>
+      <room>rooms\rm_1</room>
+      <room>rooms\rm_2</room>
+      <room>rooms\rm_3</room>
+      <room>rooms\rm_4</room>
+      <room>rooms\rm_5</room>
+      <room>rooms\rm_6</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
