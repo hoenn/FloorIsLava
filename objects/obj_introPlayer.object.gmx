@@ -71,9 +71,21 @@ yy=868;
             <kind>1</kind>
             <string>///Physics Step
 //Local vars for current keys
-var rkey= keyboard_check(vk_right);
-var lkey = keyboard_check(vk_left);
-var jkey = keyboard_check(vk_space);
+var rkey;
+var lkey;
+var jkey;
+if(gamepad_is_connected(0))
+{
+    rkey = (gamepad_axis_value(0, gp_axislh) &gt;= .5) || gamepad_button_check(0, gp_padr);
+    lkey = (gamepad_axis_value(0, gp_axislh) &lt;= -.5) ||gamepad_button_check(0, gp_padl);
+    jkey = gamepad_button_check_pressed(0, gp_face1);
+}
+else //Keyboard
+{
+    rkey= keyboard_check(vk_right);
+    lkey = keyboard_check(vk_left);
+    jkey = keyboard_check(vk_space);
+}
 
 //Check if offscreen
 if(x &gt; room_width || x &lt; 0 || y &gt; room_height || y &lt; 0)
