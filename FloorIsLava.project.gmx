@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\mus_firescape</sound>
+    <sound>sound\snd_burn</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>

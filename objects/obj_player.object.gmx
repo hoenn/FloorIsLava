@@ -40,7 +40,7 @@ x_offset =0;
 y_offset =7;
 my_boots = instance_create(x-x_offset, y-y_offset, obj_boots);
 //Game
-start   = false;
+
 //Trail
 revlen = 0;
 revdir = 0;
@@ -82,8 +82,11 @@ if(x &gt; room_width || x &lt; 0 || y &gt; room_height || y &lt; 0)
 //Check ground
 if(place_meeting(x, y+1, obj_wall)) 
 {
+    //Death
     if(!has_boots)
     {   
+        
+        audio_play_sound(snd_burn, 1, false);
         room_restart();
     }
     vspd=0;
@@ -103,10 +106,10 @@ else
 
 //Move Right
 if(rkey)
-{
+{   
     if(hspd &lt; spd)
         hspd+=fric;
-    else
+    else 
         hspd = spd;
     
     if(place_meeting(x-1, y, obj_wall) &amp;&amp; !place_meeting(x, y+1, obj_wall) &amp;&amp; !lkey)
