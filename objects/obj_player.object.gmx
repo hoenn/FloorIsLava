@@ -257,11 +257,13 @@ else
     revlen=point_distance(x, y, xprevious, yprevious)*1.5;
     revdir=point_direction(x, y, xprevious, yprevious);
     for (drawlength=0; drawlength&lt;=revlen; drawlength+=1)
-      draw_sprite_ext(sprite_index, -1, x+lengthdir_x(drawlength,revdir), y+lengthdir_y(drawlength,revdir), image_xscale, image_yscale, image_angle, c_white, 1/(drawlength+1))
+    {     
+       draw_sprite_ext(sprite_index, -1, x+lengthdir_x(drawlength,revdir), y+lengthdir_y(drawlength,revdir), image_xscale, image_yscale, image_angle, c_white, 1/(drawlength+1))
+    }
 }
 else
 {
-    draw_sprite_ext(sprite_index, -1, x, y, 1, 1, image_angle, c_gray, 1);
+    draw_sprite_outlined(spr_player, -1, x, y, 1, 1, image_angle, c_gray, c_black);
     draw_sprite_ext(spr_boots, -1, my_boots.x, my_boots.y, my_boots.image_xscale, 1, my_boots.image_angle, c_white, 1); 
 }
 </string>
