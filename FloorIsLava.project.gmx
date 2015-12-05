@@ -20,6 +20,9 @@
     <background>background\background0</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\draw_sprite_outlined.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
   </fonts>

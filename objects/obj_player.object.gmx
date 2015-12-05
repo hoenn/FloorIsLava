@@ -261,7 +261,7 @@ else
 }
 else
 {
-    draw_sprite_ext(sprite_index, -1, x, y, 1, 1, image_angle, c_gray, 1);
+    draw_sprite_outlined(sprite_index, -1, x, y, 1, 1, image_angle, c_gray, c_black);
     draw_sprite_ext(spr_boots, -1, my_boots.x, my_boots.y, my_boots.image_xscale, 1, my_boots.image_angle, c_white, 1); 
 }
 </string>
