@@ -96,14 +96,15 @@ if(place_meeting(x, y+1, obj_wall))
 {
     //Death
     if(!has_boots)
-    {   
-        
+    {        
         audio_play_sound(snd_burn, 1, false);
         room_restart();
     }
     vspd=0;
+    //Jump out of boots
     if(jkey)
     {
+        audio_play_sound(snd_boots_off, 1, false);
         has_boots=false;
         vspd = - jspd;
     }
@@ -197,6 +198,7 @@ else
 {
     if(vspd==0 &amp;&amp; place_meeting(x, y, obj_boots))
     {
+        audio_play_sound(snd_boots_on, 1, false);
         has_boots = true;
     }
 }
@@ -206,6 +208,30 @@ else
       </action>
     </event>
     <event eventtype="4" ename="obj_chckpt">
+      <action>
+        <libid>1</libid>
+        <id>211</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>snd_chckpt</sound>
+          </argument>
+          <argument>
+            <kind>3</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>226</id>
