@@ -17,7 +17,13 @@
     <sprite>sprites\spr_chckpt</sprite>
     <sprite>sprites\spr_sign</sprite>
     <sprite>sprites\spr_boots</sprite>
-    <sprite>sprites\spr_endTut</sprite>
+    <sprite>sprites\spr_static_lava</sprite>
+    <sprites name="menu">
+      <sprite>sprites\spr_snd_down</sprite>
+      <sprite>sprites\spr_sound_off</sprite>
+      <sprite>sprites\spr_snd_up</sprite>
+      <sprite>sprites\spr_endTut</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -31,20 +37,28 @@
     <font>fonts\fnt_default</font>
   </fonts>
   <objects name="objects">
+    <objects name="menu">
+      <object>objects\obj_endTut</object>
+      <object>objects\obj_sound_up</object>
+      <object>objects\obj_sound_down</object>
+      <object>objects\obj_sound_off</object>
+      <object>objects\obj_portal_menu</object>
+      <object>objects\obj_portal_start</object>
+      <object>objects\obj_sound_control</object>
+    </objects>
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_chckpt</object>
     <object>objects\obj_sign</object>
     <object>objects\obj_boots</object>
     <object>objects\obj_introPlayer</object>
-    <objects name="intro">
-      <object>objects\obj_endTut</object>
-    </objects>
     <object>objects\obj_m_firescape</object>
+    <object>objects\obj_static_lava</object>
   </objects>
   <rooms name="rooms">
     <rooms name="ch_0">
-      <room>rooms\rm_intro</room>
+      <room>rooms\start</room>
+      <room>rooms\menu</room>
     </rooms>
     <rooms name="ch_1">
       <room>rooms\hello</room>

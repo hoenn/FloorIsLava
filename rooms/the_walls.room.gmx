@@ -90,9 +90,9 @@
     <instance objName="obj_wall" x="352" y="352" name="inst_B1C734C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="320" y="352" name="inst_CEEA85F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chckpt" x="256" y="96" name="inst_2F48F93F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_wall" x="352" y="32" name="inst_97396C7A" locked="0" code="" scaleX="4" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="128" y="224" name="inst_0305A062" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="32" y="32" name="inst_7A197CB2" locked="0" code="" scaleX="4" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="352" y="32" name="inst_EF3A42D1" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tileset" x="128" y="256" w="32" h="32" xo="192" yo="0" id="10000324" name="inst_649D25BD" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -223,10 +223,6 @@
     <tile bgName="tileset" x="480" y="192" w="32" h="32" xo="128" yo="32" id="10000485" name="inst_A0E89CE2" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset" x="480" y="160" w="32" h="32" xo="128" yo="32" id="10000486" name="inst_65F3DD8D" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset" x="448" y="160" w="32" h="32" xo="128" yo="32" id="10000487" name="inst_737415BB" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tileset" x="416" y="160" w="32" h="32" xo="128" yo="32" id="10000488" name="inst_A80DCE3E" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tileset" x="384" y="160" w="32" h="32" xo="128" yo="32" id="10000489" name="inst_A0D2CAE7" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tileset" x="384" y="128" w="32" h="32" xo="128" yo="32" id="10000490" name="inst_679DA01C" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="tileset" x="416" y="128" w="32" h="32" xo="128" yo="32" id="10000491" name="inst_B66A0A80" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset" x="448" y="128" w="32" h="32" xo="128" yo="32" id="10000492" name="inst_9167D159" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset" x="480" y="128" w="32" h="32" xo="128" yo="32" id="10000493" name="inst_5632E915" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset" x="480" y="96" w="32" h="32" xo="128" yo="32" id="10000494" name="inst_80CD2570" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -247,6 +243,10 @@
     <tile bgName="tileset" x="352" y="192" w="32" h="32" xo="96" yo="0" id="10000509" name="inst_C3E9F404" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset" x="192" y="32" w="32" h="32" xo="160" yo="64" id="10001532" name="inst_66317167" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tileset" x="288" y="32" w="32" h="32" xo="192" yo="64" id="10001533" name="inst_153EB027" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset" x="416" y="160" w="32" h="32" xo="128" yo="32" id="10002535" name="inst_CF17CF25" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset" x="384" y="160" w="32" h="32" xo="128" yo="32" id="10002536" name="inst_2FF3A108" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset" x="416" y="128" w="32" h="32" xo="128" yo="32" id="10002537" name="inst_99FFADDA" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tileset" x="384" y="128" w="32" h="32" xo="128" yo="32" id="10002538" name="inst_B5421865" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
