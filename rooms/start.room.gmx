@@ -88,6 +88,12 @@
     <instance objName="obj_wall" x="0" y="160" name="inst_E1CC6E7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_portal_menu" x="0" y="192" name="inst_59E51657" locked="0" code="" scaleX="0.28125" scaleY="2.0625" colour="4294967295" rotation="0"/>
     <instance objName="obj_sound_control" x="288" y="160" name="inst_61FE191F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_title" x="128" y="96" name="inst_769A53E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_endTut" x="160" y="192" name="inst_373BE3FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="32" y="0" name="inst_BC799D87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="64" y="0" name="inst_610AD45F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="96" y="0" name="inst_BA917776" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="128" y="0" name="inst_48E877F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tileset" x="64" y="256" w="32" h="32" xo="64" yo="0" id="10000006" name="inst_80E06B88" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

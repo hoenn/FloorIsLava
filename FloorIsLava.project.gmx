@@ -23,6 +23,7 @@
       <sprite>sprites\spr_sound_off</sprite>
       <sprite>sprites\spr_snd_up</sprite>
       <sprite>sprites\spr_endTut</sprite>
+      <sprite>sprites\spr_title</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -45,6 +46,7 @@
       <object>objects\obj_portal_menu</object>
       <object>objects\obj_portal_start</object>
       <object>objects\obj_sound_control</object>
+      <object>objects\obj_title</object>
     </objects>
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
