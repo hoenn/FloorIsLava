@@ -38,6 +38,7 @@
     <font>fonts\fnt_default</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_wall</object>
     <objects name="menu">
       <object>objects\obj_endTut</object>
       <object>objects\obj_sound_up</object>
@@ -49,7 +50,6 @@
       <object>objects\obj_title</object>
     </objects>
     <object>objects\obj_player</object>
-    <object>objects\obj_wall</object>
     <object>objects\obj_chckpt</object>
     <object>objects\obj_sign</object>
     <object>objects\obj_boots</object>
@@ -75,7 +75,14 @@
       <room>rooms\faith</room>
       <room>rooms\funnel</room>
       <room>rooms\hurdles</room>
+      <room>rooms\snake</room>
       <room>rooms\crown</room>
+      <room>rooms\build_up</room>
+      <room>rooms\stairs</room>
+      <room>rooms\pong</room>
+      <room>rooms\stepping_stones</room>
+      <room>rooms\core</room>
+      <room>rooms\empty</room>
     </rooms>
   </rooms>
   <help>
