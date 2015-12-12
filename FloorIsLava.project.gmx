@@ -25,6 +25,7 @@
       <sprite>sprites\spr_endTut</sprite>
       <sprite>sprites\spr_title</sprite>
     </sprites>
+    <sprite>sprites\spr_overlay</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
