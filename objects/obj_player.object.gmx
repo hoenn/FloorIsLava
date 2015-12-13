@@ -390,6 +390,7 @@ if(bkey)
         draw_sprite_ext(spr_player, 0, xx[i], yy[i], 1, 1, 0, c_red, 1);
     }
     
+    
     draw_set_blend_mode(bm_subtract);
     
     draw_sprite(spr_overlay, -1, x-sprite_width-spr_overlay.sprite_width, y-sprite_height-spr_overlay.sprite_height);
