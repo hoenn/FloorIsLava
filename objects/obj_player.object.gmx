@@ -42,7 +42,7 @@ my_boots = instance_create(x-x_offset, y-y_offset, obj_boots);
 //Game
 global.prev_level = -1;
 sf = -1;
-length = 4;
+length = 5;
 for (var i = 0; i &lt; length; i += 1) {
     xx[i] = -10;
     yy[i] = -10;
