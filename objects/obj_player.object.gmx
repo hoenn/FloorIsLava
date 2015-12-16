@@ -47,6 +47,7 @@ for (var i = 0; i &lt; length; i += 1) {
     xx[i] = -10;
     yy[i] = -10;
 }
+
 //Trail
 revlen = 0;
 revdir = 0;
@@ -387,7 +388,7 @@ if(bkey)
     //Draw Trail
     for(var i =0; i &lt; length; i++)
     {
-        draw_sprite_ext(spr_player, 0, xx[i], yy[i], 1, 1, 0, c_red, 1);
+        draw_sprite_ext(spr_player, 0, xx[i], yy[i], 1, 1, 0, global.ground_color, 1);
     }
     
     
@@ -402,7 +403,7 @@ if(bkey)
 }
 else
 {
-    draw_sprite_outlined(sprite_index, -1, x, y, 1, 1, image_angle, c_gray, c_black);
+    draw_sprite_outlined(sprite_index, -1, x, y, 1, 1, image_angle, global.ground_color, c_black);
     draw_sprite_ext(spr_boots, -1, my_boots.x, my_boots.y, my_boots.image_xscale, 1, my_boots.image_angle, c_white, 1); 
 }
 </string>

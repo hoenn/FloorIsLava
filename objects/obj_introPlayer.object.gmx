@@ -34,6 +34,7 @@ fric    = 3;
 vspd    = 0;
 spd     = 9;
 jspd    = 13;
+global.ground_color = make_colour_rgb(212, 33, 33);
 
 
 
@@ -237,7 +238,7 @@ y += vspd;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite_outlined(sprite_index, -1, x, y, 1, 1, image_angle, c_gray, c_black);
+            <string>draw_sprite_outlined(sprite_index, -1, x, y, 1, 1, image_angle, global.ground_color, c_black);
 
 </string>
           </argument>

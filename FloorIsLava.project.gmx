@@ -82,6 +82,8 @@
       <room>rooms\stairs</room>
       <room>rooms\pong</room>
       <room>rooms\stepping_stones</room>
+      <room>rooms\pillars</room>
+      <room>rooms\bell</room>
       <room>rooms\core</room>
       <room>rooms\empty</room>
     </rooms>
