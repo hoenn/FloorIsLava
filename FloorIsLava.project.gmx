@@ -57,6 +57,7 @@
     <object>objects\obj_introPlayer</object>
     <object>objects\obj_m_firescape</object>
     <object>objects\obj_static_lava</object>
+    <object>objects\obj_pause</object>
   </objects>
   <rooms name="rooms">
     <rooms name="ch_0">
