@@ -82,10 +82,12 @@
       <room>rooms\stairs</room>
       <room>rooms\pong</room>
       <room>rooms\stepping_stones</room>
-      <room>rooms\pillars</room>
+      <room>rooms\squeeze</room>
+      <room>rooms\potion</room>
       <room>rooms\bell</room>
+      <room>rooms\zipper</room>
+      <room>rooms\volcanic</room>
       <room>rooms\core</room>
-      <room>rooms\empty</room>
     </rooms>
   </rooms>
   <help>
