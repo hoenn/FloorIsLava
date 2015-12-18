@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_sign" x="256" y="1280" name="inst_9C804C8A" locked="0" code="text = &quot;funnel&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player" x="240" y="1296" name="inst_57F42375" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player" x="247" y="1299" name="inst_57F42375" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chckpt" x="240" y="32" name="inst_E3E904D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="192" y="1312" name="inst_9A0B0DBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="224" y="1312" name="inst_329F5356" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

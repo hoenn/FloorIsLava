@@ -48,7 +48,9 @@
             <string>if (global.masterVolume&gt;0) {
     global.masterVolume-= .1;
     audio_sound_gain(snd_burn, global.masterVolume, 0);
-    audio_sound_gain(mus_firescape, global.masterVolume, 0);
+    audio_sound_gain(mus_song_1, global.masterVolume/2, 0);
+    audio_sound_gain(mus_song_2, global.masterVolume/2, 0);
+    audio_sound_gain(mus_song_end, global.masterVolume/2, 0);
     audio_sound_gain(snd_boots_on, global.masterVolume, 0);
     audio_sound_gain(snd_boots_off, global.masterVolume, 0);
     audio_sound_gain(snd_chckpt, global.masterVolume, 0);

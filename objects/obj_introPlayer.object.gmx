@@ -36,7 +36,9 @@ spd     = 9;
 jspd    = 13;
 global.ground_color = make_colour_rgb(212, 33, 33);
 
-
+audio_sound_gain(mus_song_1, global.masterVolume/2, 0);
+audio_sound_gain(mus_song_2, global.masterVolume/2, 0);
+audio_sound_gain(mus_song_end, global.masterVolume/2, 0);
 
 
 

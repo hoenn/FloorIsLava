@@ -5,11 +5,13 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\mus_firescape</sound>
+    <sound>sound\mus_song_1</sound>
     <sound>sound\snd_burn</sound>
     <sound>sound\snd_boots_on</sound>
     <sound>sound\snd_chckpt</sound>
     <sound>sound\snd_boots_off</sound>
+    <sound>sound\mus_song_2</sound>
+    <sound>sound\mus_song_end</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
@@ -67,7 +69,6 @@
       <room>rooms\menu</room>
     </rooms>
     <rooms name="ch_1">
-      <room>rooms\end_screen</room>
       <room>rooms\hello</room>
       <room>rooms\space</room>
       <room>rooms\the_walls</room>
@@ -93,6 +94,9 @@
       <room>rooms\volcanic</room>
       <room>rooms\core</room>
       <room>rooms\climb</room>
+      <room>rooms\climb_2</room>
+      <room>rooms\climb_3</room>
+      <room>rooms\end_screen</room>
     </rooms>
   </rooms>
   <help>
