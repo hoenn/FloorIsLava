@@ -78,8 +78,10 @@ revdir = 0;
 if(global.pause) exit;
 if(!has_boots)
 {
+    //If trail was just removed
     if(xx[0] = -10)
-    {
+    {   
+        //Place trail under player
         for(var i = 0; i&lt;length; i++)
         {
             xx[i] = x;
@@ -98,6 +100,8 @@ if(!has_boots)
 }
 else
 {
+    //If trail is present but should go away move trail
+    //off screen temporarily
     if(xx[0]!=-10)
     {
         for (var i = 0; i&lt;length; i++) {
@@ -146,8 +150,9 @@ var bkey;
 
 if(gamepad_is_connected(0))
 {
-    rkey = (gamepad_axis_value(0, gp_axislh) &gt;= .5) || gamepad_button_check(0, gp_padr)||keyboard_check(vk_right);
-    lkey = (gamepad_axis_value(0, gp_axislh) &lt;= -.5) ||gamepad_button_check(0, gp_padl)||keyboard_check(vk_left);
+    var dead_zone = 0.5;
+    rkey = (gamepad_axis_value(0, gp_axislh) &gt;= dead_zone) || gamepad_button_check(0, gp_padr)||keyboard_check(vk_right);
+    lkey = (gamepad_axis_value(0, gp_axislh) &lt;= -dead_zone) ||gamepad_button_check(0, gp_padl)||keyboard_check(vk_left);
     jkey = gamepad_button_check_pressed(0, gp_face1)||keyboard_check(vk_space);
     bkey = gamepad_button_check_pressed(0, gp_select)||keyboard_check(vk_f1);
 
